@@ -1,0 +1,1 @@
+C:\flutter practice\translation_overlay_practice_11_using_event_channel\translation_overlay_practice_3_using_event_channel\build\app\intermediates\cxx\RelWithDebInfo\341cs4s5\obj\arm64-v8a

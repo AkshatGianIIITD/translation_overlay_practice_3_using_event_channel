@@ -356,7 +356,7 @@ class _ScreenShareAppState extends State<ScreenShareApp> {
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16,right: 16,bottom: 16),
                           child: Text(
-                            "Technology has become an essential part of modern life, affecting nearly every aspect of our daily activities.  ",
+                            "This sample text allows user to see the translation overlay when it starts and see how well it translated and overlays.",
                             style: TextStyle(
                               color: Colors.black54,
                               fontSize: 16,

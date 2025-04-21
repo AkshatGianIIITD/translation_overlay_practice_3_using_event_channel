@@ -1,0 +1,2 @@
+C:/flutter practice/translation_overlay_practice_11_using_event_channel/translation_overlay_practice_3_using_event_channel/android/app/.cxx/RelWithDebInfo/341cs4s5/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/flutter practice/translation_overlay_practice_11_using_event_channel/translation_overlay_practice_3_using_event_channel/android/app/.cxx/RelWithDebInfo/341cs4s5/armeabi-v7a/CMakeFiles/rebuild_cache.dir

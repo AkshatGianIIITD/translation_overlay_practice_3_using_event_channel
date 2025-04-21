@@ -20,4 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.runtime.sendMessage({ action: 'translatePage', language: language });
         window.close();
     });
+
+    document.getElementById('submitFeedbackButton').addEventListener('click', () => {
+        const feedback = document.getElementById('feedbackText').value.trim();
+        const feedbackMessage = document.getElementById('feedbackMessage');
+
+        if (feedback.length === 0) {
+            feedbackMessage.style.color = 'red';
+            feedbackMessage.textContent = "Feedback cannot be empty.";
+            feedbackMessage.style.display = 'block';
+            return;
+        }
+
+        // Log to console or save to storage/server
+        console.log("User feedback:", feedback);
+
+        // Clear and thank the user
+        document.getElementById('feedbackText').value = '';
+        feedbackMessage.style.color = 'green';
+        feedbackMessage.textContent = "Thank you for your feedback!";
+        feedbackMessage.style.display = 'block';
+
+        setTimeout(() => {
+            feedbackMessage.style.display = 'none';
+        }, 3000);
+    });
 });

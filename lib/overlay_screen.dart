@@ -77,15 +77,17 @@ class _OverlayScreenState extends State<OverlayScreen> {
                       top: boundingBox.top,
                       child: Container(
                         width: boundingBox.width,
-                        height: boundingBox.height * 2,
+                        //height: data["numLines"]==1?boundingBox.height * 2:boundingBox.height,
+                        height: boundingBox.height+10,
                         padding: EdgeInsets.all(4),
-                        color: Color(data["backgroundColor"]),
+                        color: Color(data["backgroundColor"]).withOpacity(1.0),
                         child: AutoSizeText(
                           minFontSize: 5,
                           data["translatedText"],
                           style: TextStyle(
                             fontSize: 16,
                             color: Color(data["fontColor"]),
+                            decoration: TextDecoration.none, // Just in case
                           ),
                           maxLines: data["numLines"], // Let it to the same number of lines as the original text.
                           //overflow: TextOverflow.ellipsis,
