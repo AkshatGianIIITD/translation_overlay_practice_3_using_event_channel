@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/icon-128.png",
+         "16": "images/icon-16.png",
+         "48": "images/icon-48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Translates websites and web pages using AI Translator",
+   "host_permissions": [ "https://translate.google.com/*", "https://translate.googleapis.com/*" ],
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAldYIu4B8COEV4lDNnfRYXkrjNoCX87hl/OrA+Qw+U5k3C+/bXcJzxHZ/NmgpOd+08QYLsAtkxjSqgbh6sMhpWifFczVCAwYAOuMlztVv0g+pQhqbEYp38D3ZbkBFlv4/T4W239LcZ2N/neZImkCmuH7ebQ9ShwBMgAp07Ayb0QP3CYtA3d2R97ZQwQhJUnhMA2bwtuRBQm4+WC+SBiTcwTm8yKh1rUTVxt7fcARREwGiSsruYCmlaIHdAhkkHuq6ab+/2Wl+BFk16Yn6dW3X1UWNEO0qKPlQkAbk+hkPqIk3CVPZ8MI5AFgJpsy/xN3LfDBtULlR7Z2AS5sg6ccbgwIDAQAB",
+   "manifest_version": 3,
+   "name": "Matka Manav",
+   "permissions": [ "activeTab", "contextMenus", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}

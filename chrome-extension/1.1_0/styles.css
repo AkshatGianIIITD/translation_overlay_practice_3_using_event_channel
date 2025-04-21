@@ -1,0 +1,51 @@
+
+#translate-icon {
+    position: absolute;
+    background-color: #4285F4;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#translate-icon:hover {
+    transform: scale(1.1);
+}
+
+button.convey-close {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    opacity: 0.3;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+button.convey-close:hover {
+    opacity: 1;
+}
+button.convey-close:before, button.convey-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+}
+button.convey-close:before {
+    transform: rotate(45deg);
+}
+button.convey-close:after {
+    transform: rotate(-45deg);
+}
